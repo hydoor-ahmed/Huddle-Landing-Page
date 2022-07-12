@@ -1,0 +1,145 @@
+footer {
+  color: white;
+
+  .bg-top,
+  .bg-bottom {
+    width: 100%;
+  }
+
+  .bg {
+    background: $very-dark-cyan;
+    margin-top: -10px;
+    padding: 100px 0;
+  }
+
+  .container {
+    display: flex;
+
+    @media (min-width: 992px) {
+      justify-content: space-around;
+    }
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 65px;
+    }
+
+    .logo {
+      width: 40%;
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+
+      img {
+        margin-bottom: 10px;
+        @media (max-width: 472px) {
+          width: 60%;
+        }
+      }
+      p {
+        max-width: 370px;
+        font-weight: lighter;
+        font-size: 14px;
+      }
+      .toasl {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+
+        .phone {
+          margin-bottom: 12px;
+        }
+
+        .phone,
+        .email {
+          display: flex;
+
+          img {
+            width: 17px;
+          }
+
+          h3 {
+            margin-left: 20px;
+            font-weight: lighter;
+            font-size: 14px;
+          }
+        }
+      }
+      .social-icons {
+        margin-top: 50px;
+        font-size: 26px;
+
+        a {
+          color: white;
+
+          i {
+            margin-right: 15px;
+            transition: 0.3s;
+          }
+          i.fa-twitter-square:hover {
+            color: #01c6f8;
+          }
+        }
+      }
+    }
+    .txt {
+      width: 50%;
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 25px;
+        text-transform: uppercase;
+      }
+      p {
+        max-width: 380px;
+        margin: 18px 0;
+        font-weight: lighter;
+        font-size: 14px;
+      }
+
+      .subscribe {
+        display: flex;
+        margin-top: 30px;
+        @media (max-width: 472px) {
+          flex-wrap: wrap;
+        }
+
+        input {
+          padding: 12px 10px;
+          border-radius: 6px;
+          margin-right: 20px;
+          width: 320px;
+          height: 47px;
+          font-size: 20px;
+          outline: none;
+          @media (max-width: 472px) {
+            width: 100%;
+            margin-right: 0;
+          }
+        }
+        button {
+          height: 47px;
+          background: $pink;
+          border: none;
+          color: white;
+          padding: 12px 30px;
+          font-weight: bold;
+          font-size: 17px;
+          border-radius: 6px;
+          cursor: pointer;
+          transition: 0.3s;
+          &:hover {
+            background: $light-pink;
+          }
+          @media (max-width: 472px) {
+            margin-left: auto;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+
+.landing {
+  
+  .container {
+    height: calc(100vh - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+    h1 {
+      font-family: $heading-font;
+	  margin-bottom: 12px;
+	  font-size: 50px;
+      @media (max-width: 768px) {
+        font-size: 25px;
+      }
+	  @media ($mobile-media) {
+		  font-size: 20px;
+	  }
+    }
+
+    p {
+	  @media (max-width: 768px) {
+		  font-size: 15px;
+	  }
+	  @media ($mobile-media) {
+		  font-size: 13px;
+	  }
+      font-size: 18px;
+      max-width: 590px;
+    }
+
+    a {
+	  @media (max-width: 768px) {
+		  padding: 12px 40px;
+		  font-size: 13px;
+	  }
+	  @media ($mobile-media) {
+		  font-size: 11px;
+		  padding: 10px 35px;
+	  }
+      display: block;
+      margin-top: 20px;
+      font-size: 15px;
+      background: $pink;
+      color: white;
+      padding: 18px 70px;
+      border-radius: 30px;
+      font-weight: bold;
+	  transition: .3s;
+	  &:hover {
+      background: $light-pink;
+	  }
+    }
+  }
+}

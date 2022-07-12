@@ -1,0 +1,70 @@
+.users {
+  margin-top: 40px;
+
+  .bg-top,
+  .bg-bottom {
+    width: 100%;
+  }
+
+  .bg {
+    background-color: $very-pale-blue;
+    margin-top: -10px;
+    padding: 50px 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media ($tablet-media) {
+      flex-direction: column-reverse;
+      row-gap: 55px;
+      text-align: center;
+    }
+
+    .txt {
+      width: 40%;
+      @media (min-width: 768px) {
+        margin-left: 20px;
+      }
+      @media ($tablet-media) {
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 38px;
+        font-family: $heading-font;
+        margin-bottom: 10px;
+        @media ($tablet-media) {
+          font-size: 30px;
+        }
+        @media (max-width: 425px) {
+          font-size: 23px;
+        }
+      }
+      p {
+        max-width: 500px;
+        @media ($tablet-media) {
+          max-width: 100%;
+        }
+        @media (max-width: 425px) {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .img {
+      width: 45%;
+      @media (min-width: 768px) {
+        margin-right: 20px;
+      }
+      @media ($tablet-media) {
+        width: 80%;
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.status {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @media ($tablet-media) {
+      flex-direction: column;
+      row-gap: 80px;
+    }
+
+    .communities {
+      img {
+        @media (max-width: 525px) {
+          width: 35px
+        }
+      }
+      h1 {
+        font-size: 80px;
+        @media (max-width: 525px) {
+          font-size: 45px;
+        }
+      }
+      h3 {
+        color: #aab6bf;
+        font-weight: normal;
+        @media (max-width: 525px) {
+          font-size: 17px;
+        }
+      }
+    }
+
+    .messages {
+      img {
+        @media (max-width: 525px) {
+          width: 35px
+        }
+      }
+      h1 {
+        font-size: 80px;
+        @media (max-width: 525px) {
+          font-size: 45px;
+        }
+      }
+      h3 {
+        color: #aab6bf;
+        font-weight: normal;
+        @media (max-width: 525px) {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}

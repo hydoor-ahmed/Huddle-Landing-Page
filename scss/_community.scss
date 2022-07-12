@@ -1,0 +1,41 @@
+.community {
+  padding: 100px 0;
+  text-align: center;
+
+  .container {
+    h1 {
+      font-size: 38px;
+      @media ($tablet-media) {
+        font-size: 30px;
+      }
+      @media (max-width: 425px) {
+        font-size: 22px;
+      }
+    }
+
+    a {
+      @media (max-width: 768px) {
+        padding: 12px 40px;
+        font-size: 13px;
+      }
+      @media ($mobile-media) {
+        font-size: 11px;
+        padding: 10px 35px;
+      }
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+      margin-top: 20px;
+      font-size: 15px;
+      background: $pink;
+      color: white;
+      padding: 18px 70px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+      &:hover {
+        background: $light-pink;
+      }
+    }
+  }
+}
